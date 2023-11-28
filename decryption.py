@@ -7,7 +7,7 @@ def getcipherkey():
     return shift
 
 def getmsg():
-    ste=input("enter message to encrypt: ")
+    ste=input("enter message to decrypt: ")
     return ste
 
 def decryption(msg,cipherkey,alphabet):
