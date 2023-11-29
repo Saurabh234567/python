@@ -1,5 +1,5 @@
-from cipherkey import getcipherkey
-from message import getmessage
+from cipherkey import getdecryptcipherkey
+from message import getdecryptmessage
 
 
 def decryptmessage(message,cipherkey,alphabet):
@@ -15,7 +15,7 @@ def decryptmessage(message,cipherkey,alphabet):
     return decryptedmessage
 
 a="ABCDEFGHIJKLMNOPQWRSTUVWXYZ"
-c = getcipherkey()
-m = getmessage()
+c = getdecryptcipherkey()
+m = getdecryptmessage()
 
 print(decryptmessage(m,c,a))

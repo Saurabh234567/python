@@ -1,5 +1,5 @@
-from cipherkey import getcipherkey
-from message import getmessage
+from cipherkey import getencryptcipherkey
+from message import getencryptmessage
 
 
 def encryptmessage(message,cipherkey,alphabet):
@@ -15,7 +15,7 @@ def encryptmessage(message,cipherkey,alphabet):
     return encryptedmessage
 
 a="ABCDEFGHIJKLMNOPQWRSTUVWXYZ"
-c = getcipherkey()
-m = getmessage()
+c = getencryptcipherkey()
+m = getencryptmessage()
 
 print(encryptmessage(m,c,a))
