@@ -14,8 +14,3 @@ def encryptmessage(message,cipherkey,alphabet):
             encryptedmessage = encryptedmessage + currchar
     return encryptedmessage
 
-a="ABCDEFGHIJKLMNOPQWRSTUVWXYZ"
-c = getcipherkey()
-m = getmessage()
-
-print(encryptmessage(m,c,a))
