@@ -1,8 +1,3 @@
-#import CipherKey
-#CipherKey.getCipherkey()
-
-from cipherkey import getCipherkey
-from message import getmessage
 
 def encryptMessage(message, cipherKey, alphabet):
     encryptedMessage=""

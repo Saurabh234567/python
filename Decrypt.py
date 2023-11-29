@@ -1,10 +1,10 @@
 from cipherkey import getCipherkey
 from encrypt import encryptMessage
 from message import getmessage
-
+from dfunc import getDoubleAlphabet
 
 def decryptMessage(enmessage, cipherKey, alphabet):
-    print("the encypted message : ", enmessage)
+    print("The Encypted Message : ", enmessage)
     decMessage=""
     upperMessage=enmessage.upper()
     for curMessage in upperMessage:
@@ -16,16 +16,9 @@ def decryptMessage(enmessage, cipherKey, alphabet):
             decMessage= decMessage + curMessage
     return decMessage
 
+mess=getmessage()
+key=getCipherkey()
+alpha=getDoubleAlphabet()
+e=encryptMessage(mess,key,alpha)
 
-a="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-c=getCipherkey()
-m=getmessage()
-e=encryptMessage(m,c,a)
-print(e)
-
-print(decryptMessage(e,c,a))
-
-
-#m=input("Enter the Encrypted foramt of the message: ")
-#print(decryptMessage(m,c,a))
-    
+print("The Decrypted Message : ",decryptMessage(e,key,alpha))
